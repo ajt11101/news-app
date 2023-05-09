@@ -5,12 +5,11 @@ export class News extends Component {
   render() {
     return (
       <div>
-        This is news.
-        <Newsitem title="business" description="this is fucking news" />
-        <Newsitem />
-        <Newsitem />
-        <Newsitem />
-        <Newsitem />
+        <div>
+          <Newsitem title="business" description="this is fucking news" />
+          <Newsitem />
+          <Newsitem />
+        </div>
       </div>
     );
   }
