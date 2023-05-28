@@ -4,276 +4,282 @@ import Newsitem from "./Newsitem";
 export class News extends Component {
   articles = [
     {
-      source: { id: null, name: "YouTube" },
+      source: { id: null, name: "Hindustan Times" },
+      author: "HT Tech",
+      title:
+        "WWDC 2023: From iOS 17, mixed reality headset to 15-inch MacBook Air, know what to expect - HT Tech",
+      description:
+        "With a little more than a week to go, Apple WWDC 2023 is set to be an exciting affair. Know everything you should be looking forward to. Includes iOS 17, mixed reality headset, 15-inch MacBook Air and more.",
+      url: "https://tech.hindustantimes.com/tech/news/wwdc-2023-from-ios-17-mixed-reality-headset-to-15-inch-macbook-air-know-what-to-expect-71685174160446.html",
+      urlToImage:
+        "https://images.hindustantimes.com/tech/img/2023/05/27/1600x900/WWDC_2023_1683351236015_1685174202075.png",
+      publishedAt: "2023-05-27T08:06:05Z",
+      content:
+        "After Google and Microsoft's developer conferences, now it is the turn of Apple. On June 5, the iPhone maker will host its Worldwide Developer Conference (WWDC) 2023. The event, which will go on for … [+1998 chars]",
+    },
+    {
+      source: { id: null, name: "India Education Diary" },
+      author: "iednewsdesk",
+      title:
+        "University of Leeds study solves mystery of Jupiter's stunning colour changes - India Education Diary",
+      description:
+        "Academics at the University of Leeds believe they could have found the answer to a long-running mystery behind Jupiter’s famous “stripes”.Pictures of the planet are characterised by bands of colour, as well as the famous Great Red Spot, but these ban",
+      url: "https://indiaeducationdiary.in/university-of-leeds-study-solves-mystery-of-jupiters-stunning-colour-changes/",
+      urlToImage:
+        "https://indiaeducationdiary.in/wp-content/uploads/2023/05/image-5.jpg",
+      publishedAt: "2023-05-27T07:54:39Z",
+      content:
+        "Academics at the University of Leeds believe they could have found the answer to a long-running mystery behind Jupiters famous stripes.\r\nPictures of the planet are characterised by bands of colour, a… [+4514 chars]",
+    },
+    {
+      source: { id: null, name: "NDTV News" },
       author: null,
       title:
-        "Debate rages in Canada's Parliament as Chinese diplomat expelled for allegedly threatening MP | LIVE - Global News",
+        "Nitish Kumar Slams Centre Over New Parliament, Says 'No Sense' To Attend NITI Aayog Meeting - NDTV",
       description:
-        "Question period in Canada's House of Commons in Ottawa will continue the debate after a Chinese diplomat was expelled from Canada for allegedly making threat...",
-      url: "https://www.youtube.com/watch?v=VB4FTva1Bno",
-      urlToImage: "https://i.ytimg.com/vi/VB4FTva1Bno/maxresdefault_live.jpg",
-      publishedAt: "2023-05-09T18:13:56Z",
-      content: null,
+        "Bihar Chief Minister Nitish Kumar on Saturday slammed the Centre over the construction of the new Parliament building and said that there is 'no sense' to attend the NITI Aayog meeting and the inauguration ceremony of the new building.",
+      url: "https://www.ndtv.com/india-news/nitish-kumar-slams-centre-over-new-parliament-says-no-sense-to-attend-niti-aayog-meeting-4070956",
+      urlToImage:
+        "https://c.ndtvimg.com/2023-04/4fu464o_nitish-kumar_625x300_23_April_23.jpg",
+      publishedAt: "2023-05-27T07:53:01Z",
+      content:
+        "As the chairman of NITI Aayog, PM Modi will preside over the meeting. (file)\r\nPatna: Bihar Chief Minister Nitish Kumar on Saturday slammed the Centre over the construction of the new Parliament build… [+2768 chars]",
     },
     {
-      source: { id: "reuters", name: "Reuters" },
+      source: { id: null, name: "Abplive.com" },
+      author: "ABP News Bureau",
+      title:
+        "BGMI Unban: Battlegrounds Mobile India To Be Playable Starting May 27 For Android Users, May 29 For iOS - ABP Live",
+      description: "BGMI is available for pre-load right now.",
+      url: "https://news.abplive.com/gaming/bgmi-unban-battlegrounds-mobile-india-playable-starting-may-27-for-android-users-google-play-may-29-for-ios-apple-app-store-download-pre-load-1605137",
+      urlToImage:
+        "https://feeds.abplive.com/onecms/images/uploaded-images/2022/05/09/f57aecaa369301e171a2a560372e5027_original.jpg?impolicy=abp_cdn&imwidth=1200&imheight=628",
+      publishedAt: "2023-05-27T07:45:45Z",
+      content:
+        "Battlegrounds Mobile India, popularly referred to as BGMI, finally has an official launch date. Developed by South Korean gaming giant Krafton, the battle royale will be playable for Android users st… [+2714 chars]",
+    },
+    {
+      source: { id: null, name: "Hindustan Times" },
+      author: "HT Tech",
+      title:
+        "NASA Astronomy Picture of the Day 27 May 2023: When Voyager snapped Neptune and Triton together - HT Tech",
+      description:
+        "NASA Astronomy Picture of the Day 27th of May shares a view of a crescent phase Neptune with its moon Triton.",
+      url: "https://tech.hindustantimes.com/tech/news/nasa-astronomy-picture-of-the-day-27-may-2023-when-voyager-snapped-neptune-and-triton-together-71685170655610.html",
+      urlToImage:
+        "https://images.hindustantimes.com/tech/img/2023/05/27/1600x900/neptunetriton_voyager_960_1685170831713_1685170846985.jpg",
+      publishedAt: "2023-05-27T07:01:43Z",
+      content:
+        "Among Neptune's 14 moons, Triton stands out as the largest. What makes it truly remarkable is its unconventional behaviour it is the only moon in our solar system that orbits in a direction opposite … [+1960 chars]",
+    },
+    {
+      source: { id: null, name: "Hindustan Times" },
+      author: "Aniruddha Dhar",
+      title:
+        "Woman among 24 Karnataka MLAs take oath as ministers in Siddaramaiah cabinet - Hindustan Times",
+      description:
+        "Karnataka got a full cabinet on Saturday, with 24 Congress MLAs taking oath as ministers. | Latest News India",
+      url: "https://www.hindustantimes.com/india-news/karnataka-cabinet-expansion-24-mlas-take-oath-as-ministers-siddaramaiah-dk-shivakumar-101685169423729.html",
+      urlToImage:
+        "https://www.hindustantimes.com/ht-img/img/2023/05/27/1600x900/PTI05-24-2023-000176B-0_1685172103741_1685172346217.jpg",
+      publishedAt: "2023-05-27T06:45:12Z",
+      content:
+        "Karnataka got a full cabinet on Saturday, with 24 Congress MLAs taking oath as ministers, a week after chief minister Siddaramaiah, deputy chief minister DK Shivakumar and eight other ministers were … [+1694 chars]",
+    },
+    {
+      source: { id: null, name: "Hindustan Times" },
+      author: "Shruti Tomar",
+      title:
+        "MP: Mistaking them for dacoits, villagers attack cheetah tracking team - Hindustan Times",
+      description:
+        "Forest officials said that four members of the cheetah tracking team have been injured and are recuperating in hospital",
+      url: "https://www.hindustantimes.com/cities/bhopal-news/madhya-pradesh-cheetah-tracking-team-attacked-by-villagers-mistaken-for-dacoits-searching-for-namibian-cheetah-in-burakheda-village-101685169861259.html",
+      urlToImage:
+        "https://www.hindustantimes.com/ht-img/img/2023/05/27/1600x900/The-cheetah-tracking-team-was-looking-to-locate-As_1685169856442.jpg",
+      publishedAt: "2023-05-27T06:44:20Z",
+      content:
+        "A six-member Madhya Pradesh cheetah tracking team that was looking to locate Asha, one of the Namibian cheetahs brought to India on September 17, 2022, were attacked by villagers, who mistook them fo… [+1724 chars]",
+    },
+    {
+      source: { id: null, name: "NDTV News" },
+      author: "Press Trust of India",
+      title:
+        "\"Takes Someone Else's Trash, Makes Them...\": CSK Legend Sums Up 'Captain' MS Dhoni - NDTV Sports",
+      description:
+        "MS Dhoni's tactical genius has played a big part in CSK reaching their 10th IPL final.",
+      url: "https://sports.ndtv.com/ipl-2023/takes-someone-elses-trash-makes-them-csk-legend-sums-up-captain-ms-dhoni-4068231",
+      urlToImage:
+        "https://c.ndtvimg.com/2023-05/s3ckhutg_ms-dhoni-bcci_625x300_22_May_23.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=675",
+      publishedAt: "2023-05-27T06:42:33Z",
+      content:
+        'Mahendra Singh Dhoni is a "magician" who can turn someone else\'s "trash into treasure" says the great Matthew Hayden, who also reckons that the former India captain\'s unmatched contribution to the CS… [+3229 chars]',
+    },
+    {
+      source: { id: null, name: "Hindustan Times" },
+      author: "HT Sports Desk",
+      title:
+        "Watch: Shubman Gill's ‘My goodness’ slap shot bewilders Rohit; Gavaskar reacts - Hindustan Times",
+      description:
+        "Shubman Gill smashed a tennis forehand-like shot during his 129-run knock against Mumbai Indians to stun Rohit, and commentators Gavaskar and Bishop. | Cricket",
+      url: "https://www.hindustantimes.com/cricket/watch-shubman-gills-my-goodness-slap-shot-bewilders-rohit-gavaskar-bishop-react-in-gt-vs-mi-ipl-2023-qualifier-2-101685130152459.html",
+      urlToImage:
+        "https://www.hindustantimes.com/ht-img/img/2023/05/26/1600x900/Collage_Maker-27-May-2023-01-37-AM-851_1685131656579_1685131665306.jpg",
+      publishedAt: "2023-05-27T06:34:13Z",
+      content:
+        "Gujarat Titans opener Shubman Gill produced a magnificent batting display on Friday night, as he smashed 129 off just 60 deliveries to steer the side to a 62-run win over Mumbai Indians in IPL 2023 Q… [+2113 chars]",
+    },
+    {
+      source: { id: null, name: "Hindustan Times" },
+      author: "Akanksha Agnihotri",
+      title:
+        "Cannes 2023: Anushka Sharma's fashion game soars in pink top and sequin pants - Hindustan Times",
+      description:
+        "Anushka Sharma's captivating new look at the Cannes Film Festival has left fans in awe. With her looks, she continues to reign as the ultimate fashion queen. | Fashion Trends",
+      url: "https://www.hindustantimes.com/lifestyle/fashion/cannes-2023-anushka-sharmas-fashion-game-soars-in-sleeveless-pink-top-and-black-sequin-pants-stealing-the-spotlight-101685167399152.html",
+      urlToImage:
+        "https://www.hindustantimes.com/ht-img/img/2023/05/27/1600x900/photo_2023-05-27_10-54-59_1685168109815_1685168113967.jpg",
+      publishedAt: "2023-05-27T06:25:19Z",
+      content:
+        "Anushka Sharma has recently shared her latest photos, unveiling her new appearance at the Cannes Film Festival. She looked stunning in an off-shoulder top and pants, causing a frenzy on social media.… [+2789 chars]",
+    },
+    {
+      source: { id: null, name: "NDTV News" },
+      author: "NDTV Sports Desk",
+      title:
+        "'God Blessing The Prince': Sachin Tendulkar, Shubman Gill Catch Up In Ahmedabad, Picture Goes Viral - NDTV Sports",
+      description:
+        "After the match, Shubman Gill was seen having a chat with batting great Sachin Tendulkar",
+      url: "https://sports.ndtv.com/ipl-2023/god-blessing-the-prince-sachin-tendulkar-shubman-gill-catch-up-in-ahmedabad-picture-goes-viral-4070587",
+      urlToImage:
+        "https://c.ndtvimg.com/2023-05/ed5j629_shubman-gill-and-sachin-tendulkar-806_625x300_27_May_23.jpg",
+      publishedAt: "2023-05-27T06:12:53Z",
+      content:
+        "Shubman Gill took the cricketing fraternity by storm after he smashed his third century of the ongoing Indian Premier League (IPL) season to fire Gujarat Titans to their second final in as many years… [+1671 chars]",
+    },
+    {
+      source: { id: null, name: "Jagran.com" },
+      author: "Vikas Yadav",
+      title:
+        "iOS 17 Leaks: Lock Screen On iPhone To Transform Into Smart Home Display; Details Inside - Jagran English",
+      description:
+        "Mark Gurman revealed that Apple is planning a new UI in iOS 17 that will display information like weather updates calendar appointments and other notifications on the lock screen",
+      url: "https://english.jagran.com/technology/ios-17-leaks-lock-screen-on-iphone-to-transform-into-smart-home-display-details-inside-10079735",
+      urlToImage:
+        "https://imgeng.jagran.com/images/2023/may/ios-17-lock-screen1685166407870.jpg",
+      publishedAt: "2023-05-27T05:52:00Z",
+      content:
+        "APPLE is gearing up to host WWDC 2023 event next month, where it will announce much-anticipated new iOS 17 software with a feature to transform the lock screens of an iPhone into a smart display. In … [+1924 chars]",
+    },
+    {
+      source: { id: "the-times-of-india", name: "The Times of India" },
+      author: "TIMESOFINDIA.COM",
+      title:
+        "Fatty liver: 5 factors that increase the risk of developing fatty liver (and how to modify them) - Times of India",
+      description:
+        "​Fatty liver or the fatty build up in the liver does not show any symptoms and most probably this is why many do not pay attention to it.​",
+      url: "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/fatty-liver-5-factors-that-increase-the-risk-of-developing-fatty-liver-and-how-to-modify-them/photostory/100530448.cms",
+      urlToImage: "https://static.toiimg.com/photo/100530475.cms",
+      publishedAt: "2023-05-27T05:30:00Z",
+      content:
+        "It is crucial to modify these factors so that fatty liver condition does not progress to an advanced stage.\r\nWhile weight and eating pattern is a lifestyle problem and should be checked by adding hea… [+481 chars]",
+    },
+    {
+      source: { id: "the-times-of-india", name: "The Times of India" },
+      author: "TIMESOFINDIA.COM",
+      title:
+        "Vicky Kaushal plays 'safe', refutes viral video of him being pushed by Salman Khan’s bodyguard in Dubai: No point in talking about that - Indiatimes.com",
+      description:
+        "Actor Vicky Kaushal reacted to the viral video which is surfacing on the internet where Salaman Khan’s body were allegedly seen pushing the actor aside as he arrives. While interacting with the media, he said that there are unnecessary chatter about",
+      url: "https://timesofindia.indiatimes.com/videos/entertainment/hindi/vicky-kaushal-plays-safe-refutes-viral-video-of-him-being-pushed-by-salman-khans-bodyguard-in-dubai-no-point-in-talking-about-that/videoshow/100544175.cms",
+      urlToImage:
+        "https://timesofindia.indiatimes.com/photo/100544175/size-31232/100544175.jpg",
+      publishedAt: "2023-05-27T05:25:05Z",
+      content:
+        "Ghar Banduk Biryani Trailer: Sayaji Shinde, Nagraj Manjule, Harshal Gire, Somnath Awghade, Pravin Dalimbkar, Suraj Pawar And Akash Thosar starrer Ghar Banduk Biryani Official Trailer",
+    },
+    {
+      source: { id: null, name: "Hindustan Times" },
+      author: "HT Entertainment Desk",
+      title:
+        "Adah Sharma slams gender discrimination on sets: We are told to wait for actors - Hindustan Times",
+      description:
+        "Adah Sharma opened up about gender discrimination in the film industry. She said female actors are called before male actors on the sets, and made to wait. | Bollywood",
+      url: "https://www.hindustantimes.com/entertainment/bollywood/adah-sharma-slams-gender-discrimination-in-films-101685163734252.html",
+      urlToImage:
+        "https://www.hindustantimes.com/ht-img/img/2023/05/27/1600x900/Adah_Sharma_1683791883261_1685163859170.jpg",
+      publishedAt: "2023-05-27T05:19:38Z",
+      content:
+        "Adah Sharma has been in the news ever since her film The Kerala Story was released. It has become one of the highest-grossing Hindi films of the year. Adah, who has worked in Hindi, Tamil, Telugu and… [+2260 chars]",
+    },
+    {
+      source: { id: null, name: "Livemint" },
+      author: "Livemint",
+      title:
+        "Garena Free Fire Max redeem codes for May 27, 2023: Claim daily free rewards | Mint - Mint",
+      description:
+        "Developers of Garena Free Fire Max keep updating these codes daily. There is also a dedicated microsite where players can visit to redeem the available codes.",
+      url: "https://www.livemint.com/technology/garena-free-fire-max-redeem-codes-for-may-27-2023-claim-daily-free-rewards-11685163529115.html",
+      urlToImage:
+        "https://www.livemint.com/lm-img/img/2023/05/27/600x338/Garena_Free_Fire_Max_1660531820245_1685163715758.jpg",
+      publishedAt: "2023-05-27T05:07:18Z",
+      content:
+        "Garena Free Fire Max is a revamped version of Free Fire online game. The game offers free redeem codes daily that can be used to win in-game items like weapons, diamonds, skins and more. These 12 dig… [+1878 chars]",
+    },
+    {
+      source: { id: null, name: "Biospectrumindia.com" },
       author: null,
       title:
-        "Biden, McCarthy to start U.S. debt ceiling talks as clock ticks to default - Reuters",
+        "Pfizer & Apollo launch Centre of Excellence for adult vaccination in Hyderabad - BSI bureau",
       description:
-        'President Joe Biden and top Republican lawmakers will declare their positions face to face on raising the $31.4 trillion U.S. debt ceiling on Tuesday, with the looming prospect of an <a href="/markets/us/us-debt-limit-default-could-hit-early-june-early-august…',
-      url: "https://www.reuters.com/markets/us/biden-mccarthy-start-debt-ceiling-talks-clock-ticks-default-2023-05-09/",
+        "To support and educate patients on the long-term benefits of vaccination for a wide range of diseases",
+      url: "https://www.biospectrumindia.com/news/98/23154/pfizer-apollo-launch-centre-of-excellence-for-adult-vaccination-in-hyderabad.html",
       urlToImage:
-        "https://www.reuters.com/resizer/ijQA0a7ZXQ-vjCEunmx1hypwEj8=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/I6KDW727CVKKBHODZ3VZG255ZA.jpg",
-      publishedAt: "2023-05-09T18:10:00Z",
+        "https://www.biospectrumindia.com/uploads/articles/1-23154.png",
+      publishedAt: "2023-05-27T05:02:27Z",
       content:
-        "WASHINGTON, May 9 (Reuters) - President Joe Biden and top Republican lawmakers will declare their positions face to face on raising the $31.4 trillion U.S. debt ceiling on Tuesday, with the looming p… [+4560 chars]",
+        "To support and educate patients on the long-term benefits of vaccination for a wide range of diseases\r\nPfizer India, in collaboration with Apollo Hospital, has launched a Centre of Excellence (CoE) f… [+1157 chars]",
     },
     {
-      source: { id: null, name: "CNBC" },
-      author: "Rohan Goswami",
+      source: { id: null, name: "The Indian Express" },
+      author: "Science Desk",
       title:
-        "FBI takes down Russian malware network that attacked allies, journalist computers - CNBC",
+        "NASA adds Chandra data to Webb observations, unveils stunning new images - The Indian Express",
       description:
-        "Operation Medusa took down Snake, a malware built by Russian intelligence unit to infiltrate high-value targets around the world.",
-      url: "https://www.cnbc.com/2023/05/09/fbi-takes-down-network-that-attacked-allies-journalist-computers.html",
+        "NASA unveils stunning new images combining data from multiple telescopes. See the breathtaking results of this cosmic collaboration",
+      url: "https://indianexpress.com/article/technology/science/nasa-webb-chandra-eagle-nebula-m74-ngc-346-ngc-1672-8631563/",
       urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107217554-1680165019547-gettyimages-1240615824-AFP_329X8F2.jpeg?v=1683654011&w=1920&h=1080",
-      publishedAt: "2023-05-09T17:40:11Z",
+        "https://images.indianexpress.com/2023/05/Eadgle-nebular-20230527.jpg",
+      publishedAt: "2023-05-27T04:49:43Z",
       content:
-        "The Federal Bureau of Investigation disrupted a Russian government-controlled malware network that compromised hundreds of computers belonging to NATO-member governments and other Russian targets of … [+2305 chars]",
+        "NASA on Tuesday released four images that combine data from the space agencys Chandra X-ray Observatory and the James Webb Space Telescope. Each image combines the infrared data from previously relea… [+2763 chars]",
     },
     {
-      source: { id: null, name: "CNBC" },
-      author: "Alex Harring",
+      source: { id: null, name: "Informalnewz.com" },
+      author: "Shyamu Maurya",
       title:
-        "Stocks making the biggest moves midday: Palantir, Novavax, Under Armour and more - CNBC",
+        "Today Petrol, Diesel Prices Announced : Check Latest Fuel Rates In Your City On May 27 - informalnewz",
       description:
-        "These are the stocks posting the largest moves in midday trading.",
-      url: "https://www.cnbc.com/2023/05/09/stocks-making-the-biggest-moves-midday-palantir-novavax-under-armour-and-more.html",
+        "Petrol Diesel Prices Latest Update on May 27: Petrol and diesel prices today, May 27, remained largely unchanged in India, with slight changes in some cities. According to a notification from oil marketing companies (OMCs), petrol prices in Delhi, Mumbai, Ben…",
+      url: "https://www.informalnewz.com/today-petrol-diesel-prices-announced-check-latest-fuel-rates-in-your-city-on-may-27/",
       urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/106723906-16014854632020-09-30t145935z_1098314869_rc229j9zgxcg_rtrmadp_0_palantir-ipo.jpeg?v=1683652089&w=1920&h=1080",
-      publishedAt: "2023-05-09T17:08:09Z",
+        "https://www.informalnewz.com/wp-content/uploads/2022/08/3RD-1024x825-1-300x242-1.png",
+      publishedAt: "2023-05-27T04:42:39Z",
       content:
-        "Check out the companies making headlines in midday trading.\r\nPalantir Palantir shares popped nearly 20% after the software company beat first-quarter estimates and said it anticipates full-year profi… [+5542 chars]",
+        "Petrol Diesel Prices Latest Update on May 27: Petrol and diesel prices today, May 27, remained largely unchanged in India, with slight changes in some cities. According to a notification from oil mar… [+2293 chars]",
     },
     {
-      source: { id: null, name: "BBC News" },
-      author: "https://www.facebook.com/bbcnews",
+      source: { id: null, name: "Zoom" },
+      author: "Times Now Digital",
       title:
-        "Israeli strikes on Gaza kill top militants and 10 civilians - BBC",
+        "Handing Over ‘Sengol’ To PM Modi Is Symbolic Of His ‘Coronation’ Invoking Divine Sanction: Sitaram Yechury - Times Now",
       description:
-        "The country braces for retaliation after overnight strikes kill three militants and 10 civilians.",
-      url: "https://www.bbc.com/news/world-middle-east-65529490",
+        "New Parliament building inauguration: Congress leader Jairam Ramesh on Friday stoked a huge controversy by claiming that there was no documented evidence of Lord Mountbatten, C Rajagopalachari and former PM Jawaharlal Nehru describing the Sengol as a symbol o…",
+      url: "https://www.timesnownews.com/india/handing-over-sengol-to-pm-modi-is-symbolic-of-his-coronation-invoking-divine-sanction-sitaram-yechury-article-100542861",
       urlToImage:
-        "https://ichef.bbci.co.uk/news/1024/branded_news/FF04/production/_129648256_71da3cf640d138262210ede188eff69200fedcba.jpg",
-      publishedAt: "2023-05-09T17:06:10Z",
+        "https://static.tnn.in/thumb/msid-100542861,updatedat-1685160193629,width-1280,height-720,resizemode-75/100542861.jpg",
+      publishedAt: "2023-05-27T04:03:13Z",
       content:
-        "At least 15 Palestinians, including three commanders of the militant group Islamic Jihad, have been killed in Israeli air strikes on the Gaza Strip.\r\nPalestinian health officials said eight women and… [+6315 chars]",
-    },
-    {
-      source: { id: "abc-news", name: "ABC News" },
-      author: "MUNIR AHMED and RIAZAT BUTT Associated Press",
-      title:
-        "Pakistan's ex-PM Imran Khan arrested, sparking violence - ABC News",
-      description:
-        "Pakistan’s former Prime Minister Imran Khan was arrested and dragged from an Islamabad court as he appeared there to face charges in multiple graft cases, a dramatic escalation of political tensions that sparked violent demonstrations by his supporters...",
-      url: "https://abcnews.go.com/International/wireStory/party-officials-imran-khan-arrested-court-islamabad-99190488",
-      urlToImage:
-        "https://s.abcnews.com/images/International/wirestory_55a53535b91051da679c9b57b0bc9a54_16x9_992.jpg",
-      publishedAt: "2023-05-09T17:03:45Z",
-      content:
-        "ISLAMABAD -- Pakistans former Prime Minister Imran Khan was arrested and dragged from court Tuesday as he appeared to face charges in multiple graft cases, a dramatic escalation of political tensions… [+7515 chars]",
-    },
-    {
-      source: { id: "usa-today", name: "USA Today" },
-      author: ", USA TODAY",
-      title:
-        "Ukraine Russia live updates: Putin blames Western arrogance for war - USA TODAY",
-      description:
-        'Western "arrogance" is driving a "real war" against Russia, Russian President Vladimir Putin said during a Victory Day parade on Moscow\'s Red Square.',
-      url: "https://www.usatoday.com/story/news/world/2023/05/09/ukraine-russia-war-live-updates/70198250007/",
-      urlToImage:
-        "https://www.gannett-cdn.com/presto/2023/05/09/USAT/eae3a7e2-7d41-46b0-abb0-e22853f34aa6-AP_Russia_Victory_Day_Parade.jpg?auto=webp&crop=5775,3249,x0,y293&format=pjpg&width=1200",
-      publishedAt: "2023-05-09T16:52:30Z",
-      content:
-        'Western "arrogance" is driving a "real war" against Russia and the West\'s "superiority ideology is, by definition, repulsive, deadly, and criminal," Russian President Vladimir Putin said Tuesday duri… [+4555 chars]',
-    },
-    {
-      source: { id: "buzzfeed", name: "Buzzfeed" },
-      author: "Larry Fitzmaurice",
-      title: "Francia Raisa On Selena Gomez Social Media Bullying - BuzzFeed",
-      description:
-        "\"She's literally out there saying, 'Please stop,' so I don't understand why it's not stopping — not just for me, but others that are also being antagonized online.\"",
-      url: "https://www.buzzfeed.com/larryfitzmaurice/francia-raisa-selena-gomez-bullying",
-      urlToImage:
-        "https://img.buzzfeed.com/buzzfeed-static/static/2023-05/9/16/asset/3a4f7eb0ce89/sub-buzz-2489-1683648555-9.jpg?crop=2445:1280;444,350%26downsize=1250:*",
-      publishedAt: "2023-05-09T16:46:54Z",
-      content: null,
-    },
-    {
-      source: { id: null, name: "CNBC" },
-      author: "Melissa Repko",
-      title:
-        "Under Armour sends potential warning sign about retailers' profits - CNBC",
-      description:
-        "Under Armour coped with higher promotions in the quarter, which weighed on profit margins.",
-      url: "https://www.cnbc.com/2023/05/09/under-armour-sends-potential-warning-sign-about-retailers-profits-.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/106049411-1564523093931gettyimages-962388936.jpeg?v=1683650295&w=1920&h=1080",
-      publishedAt: "2023-05-09T16:38:15Z",
-      content:
-        "Under Armour's shares sank Tuesday, even after the athletic apparel and footwear retailer beat Wall Street's quarterly revenue and earnings expectations.\r\nThe reason for the drop may offer insights i… [+4506 chars]",
-    },
-    {
-      source: { id: "cnn", name: "CNN" },
-      author: "Lauren del Valle",
-      title:
-        "What E. Jean Carroll has to prove to win her case against Donald Trump as jury deliberations begin - CNN",
-      description:
-        "A federal jury in New York has begun deliberations in E. Jean Carroll's civil battery and defamation lawsuit against former President Donald Trump.",
-      url: "https://www.cnn.com/2023/05/09/politics/carroll-trump-jury-deliberations/index.html",
-      urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230505121345-trump-carroll-split.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-05-09T16:28:00Z",
-      content:
-        "A federal jury in New York has begun deliberations in E. Jean Carrolls civil battery and defamation lawsuit against former President Donald Trump.\r\nThe panel in a Manhattan federal courtroom is set t… [+10803 chars]",
-    },
-    {
-      source: { id: null, name: "Hollywood Reporter" },
-      author: "Caitlin Huston",
-      title:
-        "Jonathan Majors Appears Virtually in Court as DA Updates Complaint - Hollywood Reporter",
-      description:
-        "A New York judge says Majors must continue to abide by the full stay-away order for protection, which includes no contact with the woman who accused him of harassment and assault.",
-      url: "https://www.hollywoodreporter.com/news/general-news/jonathan-majors-da-updates-assault-complaint-1235482882/",
-      urlToImage:
-        "https://www.hollywoodreporter.com/wp-content/uploads/2023/05/Jonathan-Majors-Vanity-Fair-After-Party-GettyImages-1473160661-H-2023.jpg?w=1024",
-      publishedAt: "2023-05-09T16:10:05Z",
-      content:
-        "Jonathan Majors appeared virtually in New York Criminal Court on Tuesday for a status conference in connection with assault and harassment charges as the DA introduced new details in the complaint, w… [+2982 chars]",
-    },
-    {
-      source: { id: "cnn", name: "CNN" },
-      author: "Hannah Rabinowitz",
-      title:
-        "'Don't freak out': Notes from defense table during the Proud Boys seditious conspiracy trial - CNN",
-      description:
-        'As the Proud Boys seditious conspiracy trial dragged on for weeks longer than anticipated, someone at the defense table doodled in blue pen on a note card a balding man with facial hair, slumped over, looking to one side and saying, "I was 25 when this trial …',
-      url: "https://www.cnn.com/2023/05/09/politics/proud-boys-trial-notes/index.html",
-      urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230509111330-05-proud-boys-notes.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-05-09T16:04:00Z",
-      content:
-        "As theProudBoysseditious conspiracy trial dragged on for weeks longer than anticipated, someone at the defense table doodled in blue pen on a note card a balding man with facial hair, slumped over, l… [+6157 chars]",
-    },
-    {
-      source: { id: "ign", name: "IGN" },
-      author: "Ryan Dinsdale",
-      title:
-        "Nintendo Switch Successor Not Happening for Another Year at Least - IGN",
-      description:
-        "Nintendo has put a stop to rumours about its new hardware, whether it's the long-rumoured Switch Pro or otherwise, by declaring that a Switch successor won't be released until April 2024 at the earliest.",
-      url: "https://www.ign.com/articles/nintendo-switch-successor-not-happening-for-another-year-at-least",
-      urlToImage:
-        "https://assets-prd.ignimgs.com/2021/07/06/untitled-1-1625577292994.jpg?width=1280",
-      publishedAt: "2023-05-09T15:56:15Z",
-      content:
-        "Nintendo has put a stop to rumours about its new hardware, whether it's the long-rumoured Switch Pro or otherwise, by declaring that a Switch successor won't be released until April 2024 at the earli… [+1390 chars]",
-    },
-    {
-      source: { id: "associated-press", name: "Associated Press" },
-      author: "Josh Boak",
-      title:
-        "How does the US debt limit standoff end? A look at the possible scenarios - The Associated Press",
-      description:
-        "WASHINGTON (AP) — Just how does this debt limit standoff end? Plenty of scenarios are being publicly and privately gamed out, but no one knows for sure. The possibilities range from kumbaya to economic chaos  with plenty of possibilities in between.",
-      url: "https://apnews.com/article/biden-debt-limit-coin-constitution-mccarthy-77be7f00b81cebec44fbaf807b9642ff",
-      urlToImage:
-        "https://storage.googleapis.com/afs-prod/media/74a77cd285654617b42f575503034ca5/3000.webp",
-      publishedAt: "2023-05-09T15:39:29Z",
-      content:
-        "WASHINGTON (AP) Just how does this debt limit standoff end?\r\nPlenty of scenarios are being publicly and privately gamed out, but no one knows for sure. The possibilities range from kumbaya to economi… [+7264 chars]",
-    },
-    {
-      source: { id: "fox-news", name: "Fox News" },
-      author: "Audrey Conklin",
-      title:
-        "Utah children's book author accused of killing husband - Fox News",
-      description:
-        "Utah authorities have arrested a mom of three and author of a children's book about grief after she allegedly poisoned her husband with fentanyl, killing him, in March 2022.",
-      url: "https://www.foxnews.com/us/utah-childrens-book-author-accused-killing-husband",
-      urlToImage:
-        "https://static.foxnews.com/foxnews.com/content/uploads/2023/05/7f27d151-Richins.jpg",
-      publishedAt: "2023-05-09T15:06:00Z",
-      content:
-        "Utah authorities on Monday arrested Kouri Richins, a mother of three and the author of a children's book about grief, in her husband's fentanyl death.\r\nProsecutors are accusing Richins, 33, of poison… [+3726 chars]",
-    },
-    {
-      source: { id: null, name: "KSL.com" },
-      author: "https://www.facebook.com/kslcom/",
-      title:
-        "Study: Mental illness in your 20s and 30s could mean greater chance of heart attack, stroke - KSL.com",
-      description:
-        "Adults in their 20s and 30s with mental disorders have a higher chance of having a heart attack or stroke, according to a new study.",
-      url: "https://www.ksl.com/article/50640158/study-mental-illness-in-your-20s-and-30s-could-mean-greater-chance-of-heart-attack-stroke",
-      urlToImage:
-        "https://img.ksl.com/slc/2928/292893/29289323.jpg?filter=kslv2/responsive_story_lg",
-      publishedAt: "2023-05-09T14:48:22Z",
-      content:
-        "Estimated read time: 3-4\r\n minutes\r\nATLANTA Adults in their 20s and 30s with mental disorders have a higher chance of having a heart attack or stroke, according to a new study.\r\nThe study published M… [+4533 chars]",
-    },
-    {
-      source: { id: "axios", name: "Axios" },
-      author: "Axios",
-      title:
-        "Glacier in northwest Greenland suggests sea level rise is underestimated - Axios",
-      description: null,
-      url: "https://www.axios.com/2023/05/09/northwest-greenland-petermann-glacier-sea-level",
-      urlToImage: null,
-      publishedAt: "2023-05-09T14:45:40Z",
-      content: null,
-    },
-    {
-      source: { id: null, name: "NBCSports.com" },
-      author: null,
-      title:
-        "Warriors burned by odd call to sit Gary Payton II in fourth vs. Lakers - Yahoo Sports",
-      description:
-        "Why did Gary Payton II watch from the bench as a man named Lonnie Walker IV fried the Warriors' defense to a crisp?",
-      url: "https://www.nbcsports.com/bayarea/warriors/warriors-burned-odd-call-sit-gary-payton-ii-fourth-vs-lakers",
-      urlToImage:
-        "https://www.nbcsports.com/sites/rsnunited/files/styles/metatags_opengraph/public/article/hero/gary-payton-ii-GettyImages-1253202648.jpg",
-      publishedAt: "2023-05-09T14:31:30Z",
-      content:
-        "LOS ANGELES When Warriors coach Steve Kerr and his staff review video of their Game 4 loss to the Lakers, they will find positives and negatives. They will see things to cheer and things to jeer, and… [+3970 chars]",
-    },
-    {
-      source: { id: null, name: "PEOPLE" },
-      author: "https://www.facebook.com/peoplemag",
-      title: "Robert De Niro Welcomes His Seventh Baby at 79 - PEOPLE",
-      description:
-        "Robert De Niro, father to six kids between the ages of 11 and 51, has welcomed his seventh baby.",
-      url: "https://people.com/parents/robert-deniro-welcomes-seventh-baby/",
-      urlToImage:
-        "https://people.com/thmb/agJEixvxDu1cQxkjdOlH9VIZ88o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(721x44:723x46)/robert-deniro-baby-050923-e98655fcb42f4dafa9a731383e2921b0.jpg",
-      publishedAt: "2023-05-09T14:23:00Z",
-      content:
-        "Robert De Niro is officially a father of seven.\r\nIn a sitdown with ET Canada, the 79-year-old Oscar winner revealed that he has welcomed a seventh baby while discussing parenting and his most recent … [+1743 chars]",
-    },
-    {
-      source: { id: null, name: "Deadline" },
-      author: "Jill Goldsmith",
-      title:
-        "Lachlan Murdoch Says $2.7 Billion Smartmatic Suit “Fundamentally Different” Than Dominion; No Change In Fox News Programming Strategy - Deadline",
-      description:
-        "No one was expecting an apology and in fact Fox CEO Lachlan Murdoch applauded “the highest journalistic standards” displayed at Fox News, saying the near $800 million settlement with Dominion Votin…",
-      url: "https://deadline.com/2023/05/fox-news-lachlan-murdoch-smartmatic-lawsuit-dominion-tucker-carlson-1235360371/",
-      urlToImage:
-        "https://deadline.com/wp-content/uploads/2023/03/GettyImages-1462520471.jpg?w=1024",
-      publishedAt: "2023-05-09T14:21:00Z",
-      content:
-        "No one was expecting an apology and in fact Fox CEO Lachlan Murdoch applauded “the highest journalistic standards” displayed at Fox News, saying the near $800 million settlement with Dominion Voting … [+1468 chars]",
+        "Nautapa started in auspicious yoga, believed to be beneficial for monsoon, take special care of these 5 things",
     },
   ];
   constructor() {
@@ -289,27 +295,18 @@ export class News extends Component {
         <div className="container my-3">
           <h2>Fresh Headlines</h2>
           <div className="row">
-            <div className="col-md-4">
-              <Newsitem
-                title="business"
-                description="this is fucking news"
-                imageUrl="https://i.ytimg.com/vi/VB4FTva1Bno/maxresdefault_live.jpg"
-              />
-            </div>
-            <div className="col-md-4">
-              <Newsitem
-                title="business"
-                description="this is fucking news"
-                imageUrl="https://i.ytimg.com/vi/VB4FTva1Bno/maxresdefault_live.jpg"
-              />
-            </div>
-            <div className="col-md-4">
-              <Newsitem
-                title="business"
-                description="this is fucking news"
-                imageUrl="https://i.ytimg.com/vi/VB4FTva1Bno/maxresdefault_live.jpg"
-              />
-            </div>
+            {this.state.articles.map((element) => {
+              return (
+                <div className="col-md-4" key={element.url}>
+                  <Newsitem
+                    title={element.title.slice(0, 40)}
+                    description={element.description.slice(0, 70) + "..."}
+                    imageUrl={element.urlToImage}
+                    newsUrl={element.url}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
