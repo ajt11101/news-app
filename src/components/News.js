@@ -27,17 +27,15 @@ export class News extends Component {
 
   //function for navigating to next page
   handleNextClick = async () => {
-    if (this.state.page + 1 <= Math.ceil(this.state.totalResults / 20)) {
-      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=f809a08ee88d40559f935a6dd0f07293&page=${
-        this.state.page + 1
-      }&pagesize=20`;
-      let data = await fetch(url);
-      let parsedData = await data.json();
-      this.setState({
-        page: this.state.page + 1,
-        articles: parsedData.articles,
-      });
-    }
+    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=f809a08ee88d40559f935a6dd0f07293&page=${
+      this.state.page + 1
+    }&pagesize=20`;
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({
+      page: this.state.page + 1,
+      articles: parsedData.articles,
+    });
   };
 
   //this helps to fetch data from an api
