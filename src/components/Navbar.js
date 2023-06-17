@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./Navstyle.css";
 export class Navbar extends Component {
   render() {
     return (
@@ -21,44 +22,44 @@ export class Navbar extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link className="nav-Link" to="/">
+              <ul className="navbar-nav mb-2 mb-lg-0">
+                {/* <li className="nav-item">
+                  <Link className="nav-item" aria-current="page" to="/">
                     Home
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/general">
+                  <Link className="nav-Link categories" to="/">
                     General
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/entertainment">
+                  <Link className="nav-Link categories" to="/entertainment">
                     Entertainment
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/health">
+                  <Link className="nav-Link categories" to="/health">
                     Health
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/science">
+                  <Link className="nav-Link categories" to="/science">
                     Science
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/sports">
+                  <Link className="nav-Link categories" to="/sports">
                     Sports
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/technology">
+                  <Link className="nav-Link categories" to="/technology">
                     Technology
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-Link" to="/business">
+                  <Link className="nav-Link categories" to="/business">
                     Business
                   </Link>
                 </li>

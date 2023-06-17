@@ -15,16 +15,23 @@ export class News extends Component {
     category: PropTypes.string.isRequired,
   };
 
-  constructor() {
-    super();
+  capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       loading: false,
       page: 1,
       totalResults: 0,
     };
+    document.title = `${this.capitalizeFirstLetter(
+      this.props.category
+    )}-My News`;
   }
 
+  //Code length kam krne ke liye refer video tutorial #33
   //function for navigating to previous page
   handlePrevClick = async () => {
     let url = `https://newsapi.org/v2/top-headlines?country=${
@@ -100,6 +107,8 @@ export class News extends Component {
                       }
                       imageUrl={element.urlToImage}
                       newsUrl={element.url}
+                      author={element.author}
+                      date={element.publishedAt}
                     />
                   </div>
                 );
@@ -110,7 +119,7 @@ export class News extends Component {
           <button
             disabled={this.state.page <= 1}
             type="button"
-            className="btn btn-primary"
+            className="btn btn-dark"
             onClick={this.handlePrevClick}
           >
             &laquo;Previous
@@ -121,7 +130,7 @@ export class News extends Component {
               this.state.page + 1
             }
             type="button"
-            className="btn btn-primary"
+            className="btn btn-dark"
             onClick={this.handleNextClick}
           >
             Next&raquo;
