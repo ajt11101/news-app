@@ -109,47 +109,46 @@ export class News extends Component {
   render() {
     return (
       <>
-        {/* <div className="container my-3" style={{ marginRight: "unset" }}> */}
-        <h2 className="text-center" style={{ margin: "20px 0px" }}>
-          Fresh Headlines
-        </h2>
-        {/* </div> */}
-        {this.state.loading && <Spinner />}
-        <InfiniteScroll
-          dataLength={this.state.articles.length}
-          next={this.fetchMoreData}
-          hasMore={this.state.articles.length !== this.state.totalResults}
-          loader={!this.state.loading && <Spinner />}
-          // loader={<h4>Loading...</h4>}
-        >
-          <div className="container">
-            <div className="row" style={{ marginRight: "unset" }}>
-              {this.state.articles.map((element) => {
-                return (
-                  <div className="col-md-4" key={element.url}>
-                    <Newsitem
-                      title={
-                        element.title !== null
-                          ? element.title.slice(0, 40) + "..."
-                          : ""
-                      }
-                      description={
-                        element.description !== null
-                          ? element.description.slice(0, 70) + "..."
-                          : ""
-                      }
-                      imageUrl={element.urlToImage}
-                      newsUrl={element.url}
-                      author={element.author}
-                      date={element.publishedAt}
-                    />
-                  </div>
-                );
-              })}
+        <div className="container my-3" style={{ marginRight: "unset" }}>
+          <h2 className="text-center" style={{ margin: "20px 0px" }}>
+            Fresh Headlines
+          </h2>
+          {this.state.loading && <Spinner />}
+          <InfiniteScroll
+            dataLength={this.state.articles.length}
+            next={this.fetchMoreData}
+            hasMore={this.state.articles.length !== this.state.totalResults}
+            loader={!this.state.loading && <Spinner />}
+            // loader={<h4>Loading...</h4>}
+          >
+            <div className="container">
+              <div className="row" style={{ marginRight: "unset" }}>
+                {this.state.articles.map((element) => {
+                  return (
+                    <div className="col-md-4" key={element.url}>
+                      <Newsitem
+                        title={
+                          element.title !== null
+                            ? element.title.slice(0, 40) + "..."
+                            : ""
+                        }
+                        description={
+                          element.description !== null
+                            ? element.description.slice(0, 70) + "..."
+                            : ""
+                        }
+                        imageUrl={element.urlToImage}
+                        newsUrl={element.url}
+                        author={element.author}
+                        date={element.publishedAt}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </InfiniteScroll>
-        {/* </div> */}
+          </InfiniteScroll>
+        </div>
         {/* Below code was for adding previous and next buttons before we added infinite scroll */}
         {/* <div className="d-flex justify-content-around">
           <button
