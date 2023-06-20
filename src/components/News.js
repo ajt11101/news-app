@@ -34,20 +34,23 @@ export class News extends Component {
 
   //this helps to fetch data from an api
   async updateNews() {
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=f809a08ee88d40559f935a6dd0f07293&page=1&pagesize=${this.props.pageSize}`;
+    this.props.setProgress(10);
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=${this.props.apiKey}&page=1&pagesize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
+    this.props.setProgress(30);
     let parsedData = await data.json();
+    this.props.setProgress(60);
     this.setState({
       articles: parsedData.articles,
       totalResults: parsedData.totalResults,
       loading: false,
     });
+    this.props.setProgress(100);
   }
 
   //this helps to fetch data from an api
   async componentDidMount() {
-    console.log("componentDidMount");
     this.updateNews();
   }
 
@@ -99,9 +102,8 @@ export class News extends Component {
   //Now we will finally have the function to fetch more data
 
   fetchMoreData = async () => {
-    console.log("Fetching more data");
     this.setState({ page: this.state.page + 1 });
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=f809a08ee88d40559f935a6dd0f07293&page=1&pagesize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=${this.props.apiKey}&page=1&pagesize=${this.props.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -114,7 +116,6 @@ export class News extends Component {
     return (
       <>
         <div className="container my-3" style={{ marginRight: "unset" }}>
-          {/* {!this.state.loading && <Spinner />} */}
           <h2 className="text-center" style={{ margin: "20px 0px" }}>
             Fresh Headlines
           </h2>
