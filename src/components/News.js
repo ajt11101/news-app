@@ -23,7 +23,7 @@ export class News extends Component {
     super(props);
     this.state = {
       articles: [],
-      loading: false,
+      loading: true,
       page: 1,
       totalResults: 0,
     };
@@ -45,13 +45,16 @@ export class News extends Component {
     });
   }
 
+  //this helps to fetch data from an api
   async componentDidMount() {
+    console.log("componentDidMount");
     this.updateNews();
   }
+
   //Code length kam krne ke liye refer video tutorial #33
   //function for navigating to previous page
 
-  //Now we have added infifnite scroll button so we dont require this handle next click and previous click
+  //Now we have added infinite scroll button so we dont require this handle next click and previous click
 
   // handlePrevClick = async () => {
   //   let url = `https://newsapi.org/v2/top-headlines?country=${
@@ -71,7 +74,7 @@ export class News extends Component {
   //   });
   // };
 
-  //function for navigating to next page
+  // function for navigating to next page
 
   // handleNextClick = async () => {
   //   let url = `https://newsapi.org/v2/top-headlines?country=${
@@ -96,6 +99,7 @@ export class News extends Component {
   //Now we will finally have the function to fetch more data
 
   fetchMoreData = async () => {
+    console.log("Fetching more data");
     this.setState({ page: this.state.page + 1 });
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=f809a08ee88d40559f935a6dd0f07293&page=1&pagesize=${this.props.pageSize}`;
     let data = await fetch(url);
@@ -110,10 +114,13 @@ export class News extends Component {
     return (
       <>
         <div className="container my-3" style={{ marginRight: "unset" }}>
+          {/* {!this.state.loading && <Spinner />} */}
           <h2 className="text-center" style={{ margin: "20px 0px" }}>
             Fresh Headlines
           </h2>
+
           {this.state.loading && <Spinner />}
+
           <InfiniteScroll
             dataLength={this.state.articles.length}
             next={this.fetchMoreData}
@@ -149,8 +156,10 @@ export class News extends Component {
             </div>
           </InfiniteScroll>
         </div>
+
         {/* Below code was for adding previous and next buttons before we added infinite scroll */}
-        {/* <div className="d-flex justify-content-around">
+        {/* 
+        <div className="d-flex justify-content-around">
           <button
             disabled={this.state.page <= 1}
             type="button"
