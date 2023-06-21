@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navstyle.css";
 
 const Newsitem = (props) => {
   let { title, description, imageUrl, newsUrl, author, date } = props;
@@ -7,12 +8,12 @@ const Newsitem = (props) => {
       <div className="card" style={{ width: "18rem" }}>
         <img
           src={imageUrl !== null ? imageUrl : "altimg.jpg"}
-          className="card-img-top"
+          className="card-img-top newsimg"
           alt="..."
         />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">{description}</p>
+          {/* <p className="card-text">{description}</p> */}
           <p className="card-text">
             <small className="text-muted">
               By {author === null ? "Unknown" : author} on{" "}
