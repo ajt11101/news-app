@@ -11,3 +11,6 @@
     width:auto;
     height:150px;
 }
+.activecategory:hover{
+    color:red;
+}

@@ -24,37 +24,55 @@ const Navbar = (props) => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/">
+                <Link className="nav-Link categories activecategory" to="/">
                   General
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/entertainment">
+                <Link
+                  className="nav-Link categories activecategory"
+                  to="/entertainment"
+                >
                   Entertainment
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/health">
+                <Link
+                  className="nav-Link categories activecategory"
+                  to="/health"
+                >
                   Health
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/science">
+                <Link
+                  className="nav-Link categories activecategory"
+                  to="/science"
+                >
                   Science
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/sports">
+                <Link
+                  className="nav-Link categories activecategory"
+                  to="/sports"
+                >
                   Sports
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/technology">
+                <Link
+                  className="nav-Link categories activecategory"
+                  to="/technology"
+                >
                   Technology
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link categories" to="/business">
+                <Link
+                  className="nav-Link categories activecategory"
+                  to="/business"
+                >
                   Business
                 </Link>
               </li>
