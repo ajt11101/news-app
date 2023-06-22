@@ -8,5 +8,7 @@ I have fetched the data using News Api.
 
 <img width="908" alt="AppPreview" src="https://github.com/ajt11101/news-app/blob/master/public/Preview.png">
 
+Above is the preview as soon as the app opens.
+
 
 
