@@ -1,10 +1,11 @@
 # news-app
 
-A simple news app built using ReactJs.Complete inks are provided for each news in the form of Read More button. I have fetched the data from NewsAPI.
+This is a simple react application which allows the user to read news out of various categories available of their choice.
+The Read More button allows user to open up the complete article.T have fetched the data using News Api.
 
 ## preview-
 
-<img width="908" alt="AppPreview" src="https://github.com/ajt11101/news-app/assets/124139353/39330207-7596-4359-9a54-c616e19caae1">
+<img width="908" alt="AppPreview" src="https://github.com/ajt11101/news-app/blob/master/public/Preview.png">
 
 
 
